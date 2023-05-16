@@ -1,12 +1,10 @@
 import React from "react"
-import { image01 } from "./import"
+import { image01, image02, image03, image04 } from "./import"
 
 function ImageSlider() {
   return (
-    <div className="slideshow container">
-      <div className="slide-1">
-        <img src={image01} alt="Test" />
-      </div>
+    <div className="slideshow-container">
+   
     </div>
   )
 }
