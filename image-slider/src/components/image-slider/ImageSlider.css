@@ -1,7 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-.slideshow-container {
-  max-width: 500px;
+.slide-container {
+  border: 1px solid;
+  
 }
