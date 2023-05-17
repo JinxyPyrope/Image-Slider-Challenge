@@ -5,7 +5,13 @@ import { image01 } from "./import"
 function ImageSlider() {
   return (
     <div className="slides-container">
-      <img src={image01} alt="test" max-width="100%"/>
+      <div className="slide">
+        <img src={image01} alt="test" />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <a className="prev"></a>
+      <a className="next"></a>
     </div>
   )
 }
