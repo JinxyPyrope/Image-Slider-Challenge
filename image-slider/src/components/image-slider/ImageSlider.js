@@ -10,8 +10,8 @@ function ImageSlider() {
         <div class="text">Caption Text</div>
       </div>
 
-      <a className="prev"></a>
-      <a className="next"></a>
+      <a className="prev">&#10094;</a>
+      <a className="next">&#10095;</a>
     </div>
   )
 }
