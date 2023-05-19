@@ -1,23 +1,22 @@
 import React from "react"
 import "./ImageSlider.css"
-import image1 from "./import"
+// import image1 from "./import"
 // import image1 from "../../assets/image1.jpg"
-
-
+import data from "./import"
 
 function ImageSlider() {
   return (
     <div className="slides-container">
-      <div>
-        <img src={image1} alt="test" />
-      </div>
-      {/* {dataSlider.map(obj => {
+      {/* <div>
+        <img alt="test" />
+      </div> */}
+      {data.map(obj => {
         return (
           <div>
-            <img src={require(`../../assets/${obj.url}`)} alt="test" />
+            <img src={obj.url}alt="test" />
           </div>
         )
-      })} */}
+      })}
     </div>
   )
 }
