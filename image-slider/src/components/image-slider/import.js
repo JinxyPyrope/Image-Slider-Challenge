@@ -3,4 +3,11 @@ import image02 from "../../assets/image2.jpg"
 import image03 from "../../assets/image3.jpg"
 import image04 from "../../assets/image4.jpg"
 
-export { image01, image02, image03, image04 }
+const dataSlider = [
+  {
+    id: 1,
+    url: "../../assets/image1.jpg"
+  }
+]
+
+export default dataSlider
