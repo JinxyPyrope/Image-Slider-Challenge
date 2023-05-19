@@ -9,7 +9,7 @@ function ImageSlider() {
     <div className="slides-container">
       {data.map(obj => {
         return (
-          <div>
+          <div className="mySlides" id={obj.id}>
             <img src={obj.url} alt="test" />
           </div>
         )
