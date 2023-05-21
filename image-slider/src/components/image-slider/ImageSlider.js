@@ -8,10 +8,8 @@ function ImageSlider() {
   return (
     <div className="slides-container">
       {data.map((image, index) => {
-        return ()
-      }
-       
-      )}
+        return <img src={image.url} alt="travel Image" />
+      })}
     </div>
   )
 }
