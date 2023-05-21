@@ -7,13 +7,11 @@ import data from "./import"
 function ImageSlider() {
   return (
     <div className="slides-container">
-      {data.map(obj => {
-        return (
-          <div className="mySlides" id={obj.id}>
-            <img src={obj.url} alt="test" />
-          </div>
-        )
-      })}
+      {data.map((image, index) => {
+        return ()
+      }
+       
+      )}
     </div>
   )
 }
