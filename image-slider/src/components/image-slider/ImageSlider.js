@@ -9,12 +9,22 @@ const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0)
   const length = slides.length
 
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1)
+  }
+
+  console.log(current)
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null
+  }
+
   return (
     <section className="slides-container">
       <FaArrowAltCircleLeft className="left-arrow" />
-      <FaArrowAltCircleRight className="right-arrow" />
-      {sliderData.map((image, index) => {
-        return <img src={image.url} alt="travel Image" className="image" />
+      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+      {sliderData.map((slide, index) => {
+        return <img src={slide.image} alt="travel Image" className="image" />
       })}
     </section>
   )
