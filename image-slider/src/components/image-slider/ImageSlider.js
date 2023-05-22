@@ -1,19 +1,22 @@
 import React, { useState } from "react"
 import "./ImageSlider.css"
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa"
 // import image1 from "./import"
 // import image1 from "../../assets/image1.jpg"
-import data from "./import"
+import { sliderData } from "./sliderData"
 
-function ImageSlider() {
+function ImageSlider(slides) {
   const [current, setCurrent] = useState(0)
-  const length = data.length
+  // const length = data.length
 
   return (
-    <div className="slides-container">
-      {data.map((image, index) => {
+    <section className="slides-container">
+      <FaArrowAltCircleLeft className="left-arrow" />
+      <FaArrowAltCircleRight className="right-arrow" />
+      {sliderData.map((image, index) => {
         return <img src={image.url} alt="travel Image" />
       })}
-    </div>
+    </section>
   )
 }
 
