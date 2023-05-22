@@ -1,10 +1,11 @@
 import "./App.css"
 import { ImageSlider } from "./components"
+import sliderData from "./components/image-slider/sliderData"
 
 function App() {
   return (
     <div className="App">
-      <ImageSlider />
+      <ImageSlider slides={sliderData} />
     </div>
   )
 }

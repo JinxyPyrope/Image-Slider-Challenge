@@ -5,9 +5,9 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa"
 // import image1 from "../../assets/image1.jpg"
 import sliderData from "./sliderData"
 
-const ImageSlider = slides => {
+const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0)
-  // const length = data.length
+  const length = slides.length
 
   return (
     <section className="slides-container">
