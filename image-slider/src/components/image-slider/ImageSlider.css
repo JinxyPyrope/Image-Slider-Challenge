@@ -2,10 +2,22 @@
   box-sizing: border-box;
 }
 .slides-container {
-  max-width: 1000px;
+  position: relative;
+  display: flex;
   height: 80vh;
 }
 
-img {
+.image {
   max-width: 100%;
+  border-radius: 60px;
 }
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+}
+
+

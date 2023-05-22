@@ -14,7 +14,7 @@ const ImageSlider = ({ slides }) => {
       <FaArrowAltCircleLeft className="left-arrow" />
       <FaArrowAltCircleRight className="right-arrow" />
       {sliderData.map((image, index) => {
-        return <img src={image.url} alt="travel Image" />
+        return <img src={image.url} alt="travel Image" className="image" />
       })}
     </section>
   )
