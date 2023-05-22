@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 .slides-container {
-  position: relative;
   display: flex;
   height: 80vh;
+  width: 1000px;
 }
 
 .image {

@@ -17,8 +17,6 @@ const ImageSlider = ({ slides }) => {
     setCurrent(current === 0 ? length - 1 : current - 1)
   }
 
-  console.log(current)
-
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null
   }
@@ -28,7 +26,11 @@ const ImageSlider = ({ slides }) => {
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
       {sliderData.map((slide, index) => {
-        return <img src={slide.image} alt="travel Image" className="image" />
+        return (
+          <div className={index === current ? "slide active" : "slide"} key={index}>
+            {index === current && <img src={slide.image} alt="travel Image" className="image" />}
+          </div>
+        )
       })}
     </section>
   )
